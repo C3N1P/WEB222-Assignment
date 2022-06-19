@@ -1,0 +1,134 @@
+html {
+    background-image: url(https://wallpapercave.com/wp/wp1836700.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-color: #f8cb78;
+    scroll-behavior: smooth;
+}
+
+header {
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    vertical-align: middle;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    background-color: rgb(213, 151, 35);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px auto;
+    width: 650px;
+    height: auto;
+    text-decoration-color: white;
+    border-radius: 1em;
+    box-shadow:         2px 10px 20px black;
+}
+
+div {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+input[type=email],
+input[type=text],
+input[type=password],
+input[type=telp],
+input[type=number] {
+    width: 93%;
+    padding: 15px;
+    margin: 5px 0 px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+  
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+p, h1, h2, h3, h4 {
+    text-align: center;
+}
+
+.req:after {
+    content: " *";
+    color: red;
+}
+
+h3 {
+    color: darkred;
+}
+
+h4 {
+    background-color: rgb(213, 151, 35);
+    padding: 20px;
+}
+
+nav {
+    text-align: center;
+}
+
+section {
+    background-color: rgb(239, 220, 185);
+    display: block;
+    padding-top: 1px;
+}
+
+footer {
+    height: 35px;
+    color: black;
+    text-align: center;
+    font-size: 90%;
+    padding-top: 20px;
+    vertical-align: middle;
+    background-color: rgb(213, 151, 35);
+
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+input, select, fieldset, textarea {
+    margin-bottom: 15px;
+    box-shadow:         2px 2px 2px black;
+    border-radius:1em;
+}
+
+fieldset {
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+}
+
+.button {
+    background-color: rgb(213, 151, 35);
+    height: auto;
+    width: 40%;
+    position: relative;
+    border: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow:         2px 2px 2px black;
+}
+
+.button:hover {
+    background-color: rgb(213, 151, 35);
+    color: black;
+}
+
+.btn {
+    text-align: center;
+}

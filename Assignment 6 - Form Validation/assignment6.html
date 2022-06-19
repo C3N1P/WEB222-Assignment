@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<html>
+
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <title>Sign Up</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="icon" href="/cenip.ico"/>
+        <link rel="stylesheet" href="/assignment6.css"/>
+        <script src="/assignment6.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1 id="title"><b>Welcome to SKUTLIV</b></h1>
+        </header>
+
+        <section class="name">
+            <h2>Registration Page</h2>
+            <p>Please fill this form to create an account.</p>
+            <nav>
+                <h3>* Required Information *</h3>
+            </nav>
+
+            <form method="post" name="signup" action="https://httpbin.org/post" onsubmit="return validateForm(this);">
+                <div id="1">
+                    <h4>Basic Information</h4>
+                        <label class="req" for="email"><b>Email</b></label><br>
+                        <input type="email" placeholder="E-Mail" name="name" id="email"/>
+                        <br>
+
+                        <label class="req" for="pass1"><b>Password</b></label><br>
+                        <input type="password" placeholder="Password" name="pass1" onchange="return validatePass(this);" required>
+                        <br>
+
+                        <label class="req" for="pass2"><b>Retype Password</b></label><br>
+                        <input type="password" placeholder="Confirm Password" name="pass2" onchange="return validatePass(this);"/>
+                        <br>
+
+                        <label class="req" for="FirstName"><b>First Name</b></label><br>
+                        <input type="text" placeholder="First Name" name="FirstName" onchange="return validateFirstName(this);"/>
+                        <br>
+
+                        <label class="req" for="LastName"><b>Last Name</b></label><br>
+                        <input type="text" placeholder="Last Name" name="LastName" onchange="return validateLastName(this);"/>
+                        <br>
+
+                        <label class="req" for="phone"><b>Phone Number</b></label><br>
+                        <input type="telp" placeholder="999-999-9999" name="phone" id="phone" onchange="return validatePhoneNums(this);"/>
+                        <br>
+
+                        <label class="req" for="address"><b>Address</b></label><br>
+                        <input type="text" placeholder="Address" name="address" id="address"/>
+                        <br>
+
+                        <label class="req" for="city"><b>City</b></label><br>
+                        <input type="text" placeholder="City" name="city" id="city"/>
+                        <br>
+
+                        <label class="req" for="province"><b>Province</b></label><br>
+                        <select name="province" id="province">
+                            <option value="0" selected="selected">- Select Your Province -</option>
+                            <option value="AB">Alberta</option>
+                            <option value="BC">British Columbia</option>
+                            <option value="MB">Manitoba</option>
+                            <option value="NB">New Brunswick</option>
+                            <option value="NL">Newfoundland and Labrador</option>
+                            <option value="NS">Nova Scotia</option>
+                            <option value="ON">Ontario</option>
+                            <option value="PE">Prince Edward Island</option>
+                            <option value="QC">Quebec</option>
+                            <option value="SK">Saskatchewan</option>
+                            <option value="NT">Northwest Territories</option>
+                            <option value="NU">Nunavut</option>
+                            <option value="YT">Yukon</option>
+                            <option value="KR">Kepulauan Riau</option>
+                        </select>
+                        <br>
+
+                        <label class="req" for="country"><b>Country</b></label><br>
+                        <input type="text" placeholder="Your Country" name="country" list="country"/>
+                        <datalist id="country">
+                            <option value="Canada">Canada</option>
+                            <option value="The United States">The United States</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Malaysia">Malaysia</option>
+                        </datalist>
+                </div>
+
+                <div id="2">
+                    <h4>Education</h4>
+                        <label for="school"><b>School</b></label><br>
+                        <input type="text" placeholder="School / University" name="school" id="school"/>
+                        <br>
+
+                        <label for="program"><b>Program</b></label><br>
+                        <input type="text" placeholder="Program" name="program" id="program"/>
+                        <br>
+
+                        <label for="degree"><b>Education Level</b></label><br>
+                        <select name="degree" id="degree">
+                            <option value="0">- Select -</option>
+                            <option value="1">Technical Diploma</option>
+                            <option value="2">College Diploma</option>
+                            <option value="3">Bachelor's Degree</option>
+                            <option value="4">Master's Degree</option>
+                            <option value="5">Others</option>
+                        </select>
+                        <br>
+
+                        <fieldset>
+                            <legend for="educationStats"><b>Education Status</b></legend><br>
+                            <input type="radio" name="type" id="f"/>Graduated<br>
+                            <input type="radio" name="type" id="y"/>Current Enrolled<br>
+                            <input type="radio" name="type" id="n"/>Did Not Graduate<br>
+                        </fieldset>
+                        <br>
+
+                        <label for="date"><b>Graduation Date</b></label><br>
+                        <input type="text" placeholder="Graduation Date" name="date" id="date"/>
+                        <br>
+                </div>
+
+                <div id="3">
+                    <h4>Work Experience</h4>
+                        <label for="employerName"><b>Employer</b></label><br>
+                        <input type="text" placeholder="Employer" name="employerName" id="employerName"/>
+                        <br>
+                        
+                        <label for="jobTitle"><b>Job Title</b></label><br>
+                        <input type="text" placeholder="Job Title" name="jobTitle" id="jobTitle"/>
+                        <br>
+
+                        <label for="jobDuty"><b>Job Duty</b></label><br>
+                        <textarea cols="58" rows="10" placeholder="About Your Previous Job"></textarea>
+                        <br>
+
+                        <label for="workedYear"><b>Worked Year</b></label><br>
+                        <input type="number" placeholder="1 - 20" name="workedYear" id="workedYear" min="1" max="20"/>
+                        <br>
+                </div>
+
+                <div id="4">
+                    <h4>Attachments</h4><br>
+                        <label for="file"><b>Attach File</b></label>
+                        <input type="file" name="file" multiple/>
+                        <br>
+                </div>
+
+                <hr>
+                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+                <br>
+                <div class="btn" id="5">
+                    <button type="reset" class="button" value="Reset">Reset Registration</button>
+                    <button type="submit" class="button" value="Apply">Apply Registration</button>
+                </div>
+                <br>
+
+                <p>Already have an account? <a href="/TUGAS/loginexample.html">Log In</a> here.</p>
+                <br>
+
+            </form>
+        </section>
+
+        <footer>
+            <div class="center">
+                &copy; 2022 Muhammad Hanif Annafi'
+                <a style="color: white; margin: auto;"></a>
+            </div>
+        </footer>
+    </body>
+
+</html>
