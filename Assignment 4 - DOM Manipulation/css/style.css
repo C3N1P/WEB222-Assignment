@@ -1,0 +1,145 @@
+/* style.css */
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+/* Bagian Header HTML */
+header {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Bagian Body HTML */
+body {
+    background-color: rgb(199, 236, 212);
+    color:black;
+}
+
+/* Menu Navigasi */
+nav {
+    background-color: green;
+}
+
+/* Elemen Tabel bagian kepala / atas (Head)*/
+thead {
+    background-color: lightblue;
+}
+
+/* Elemen Tabel bagian badan / tengah (Body)*/
+tbody {
+    background-color: lightyellow;
+}
+
+/* Elemen Tabel bagian kaki / bawah (Foot)*/
+tfoot {
+    background-color: lightgreen;
+}
+
+/* Elemen Tabel */
+table {
+    width: 25cm;
+    text-align: center;
+    border: 2px outset darkblue;
+    border-collapse: collapse;
+    color: black;
+}
+
+th, td {
+    border: 2px inset darkgreen;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav a:link, nav a:visited {
+    display: block;
+    color: #ffffff;
+    background-color: green;
+    text-align: center;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-left: 1px inset #ecefec;
+    border-right: 1px inset #ecefec;
+}
+
+nav ul li ul {
+    padding: 8px 12px;
+    position: absolute;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s;
+}
+
+nav ul li:hover ul {
+    display: block;
+    padding: 0;
+    width: 150px;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul li ul li {
+    display: block;
+    text-align: left;
+    width: 150px;
+}
+
+nav a:hover {
+    background-color: rgb(88, 186, 88);
+    color: #ffffff;
+}
+
+.clear {
+    clear:both;
+}
+
+.center {
+    text-align:center;
+    padding-top:0.6em;
+}
+
+/* Bagian Footer HTML */
+footer {
+    background-color: green;
+    color: #ffffff;
+    height:2.5em;
+}
+
+/* Style untuk Dark Mode */
+.dark-mode {
+    background-color: rgb(63, 59, 59);
+    color: white;
+}
+
+/* Style untuk Tombol Utama */
+.button {
+    background-color: green;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    margin: 3px 5px;
+    cursor: pointer;
+  }
+
+/* Style untuk Tombol Dark Mode */
+.button1 {
+      border-radius: 2px;
+}
+
+/* Style agar Tombol 1 melayang */
+.button1:hover {
+    background-color: rgb(88, 186, 88);
+    color: white;
+}
