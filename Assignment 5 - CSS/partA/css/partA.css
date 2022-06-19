@@ -1,0 +1,65 @@
+ /********************************************************************
+I declare that my assignment is wholly my own work in accordance with Seneca Academic Policy. No part of this assignment has been copied
+manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors
+and / or made available in this assignment for my use. I also declare that no part of this assignment has been distributed to other students.
+Name    : Muhammad Hanif Annafi'
+Dated   : Saturday, April 16th 2022
+********************************************************************/
+
+/* write your CSS rules here or in the HTML document */
+
+/* task 1 *//* Set the page width to 80% and horizontally centered. U can use body or .main-container and then set the margin to auto */
+.main-container {
+    margin: auto;
+    width: 80%;
+}
+
+/* task 2 *//* For level-2 headings, set text color to dark blue and background color to #cccccc */
+h2 {
+    color: darkblue;
+    background-color: #cccccc;
+}
+
+/* task 3 *//* For "paragraf2" set font family and set font size to 20pt */
+#paragraph2 {
+    font-family: "Comic Sans MS", "Comic Sans", "cursive";
+    font-size: 20pt;
+}
+
+/* task 4 *//* For all span element set text color to #5cb85c, font weight to bold, and text decoration to underline */
+span.on {
+    color: #5cb85c;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* task 5 *//* For table "section2" set background image to link and set text color to #2f4f4f */
+#section2 table {
+    color: #2f4f4f;
+    background: url(https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX23025384.jpg);
+}
+
+/* task 6 *//* For thead and tfoot set background to rgba(255, 255, 0, 0.6) and set font stlye to italic */
+thead, tfoot {
+    background-color: rgb(255, 255, 0, 0.6);
+    font-style: italic;
+}
+
+/* task 7 *//* Change color of any paragraph in document to blue color using hex decimal value when the curosr hovers over paragraph */
+p:hover {
+    color: #00008b;
+}
+
+/* task 8 *//* Set the list style type of all unorder list to square, and create another rule to set the list style type of all order list to lower alpha */
+ul {
+    list-style: square;
+}
+
+ol {
+    list-style: lower-alpha;
+}
+
+/* task 9 *//* Add ©2022 and your full name into the footer and text align it to center */
+footer {
+    text-align: center;
+}

@@ -1,0 +1,136 @@
+ /********************************************************************
+I declare that my assignment is wholly my own work in accordance with Seneca Academic Policy. No part of this assignment has been copied
+manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors
+and / or made available in this assignment for my use. I also declare that no part of this assignment has been distributed to other students.
+Name    : Muhammad Hanif Annafi'
+Dated   : Saturday, April 16th 2022
+********************************************************************/
+ 
+/* Assignment 05 - Part B */
+
+/* task 1 */
+body {
+    height: 100%;
+    background-image: url("/partB/images/canada_theme2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    text-align: center;
+}
+
+/* task 2 */
+body {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* task 3 */
+nav {
+    width: 250px;
+    float: left;
+}
+
+/* task 4 */
+.main {
+    width: 60%; /* width: 600px; */
+    float: left;
+}
+
+footer { 
+    text-align: center;
+    clear: both;
+}
+
+/* task 5 */
+#CA {
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+}
+
+#CA img {
+    padding-top: 8px;
+    width: 50px;
+}
+
+/* task 6 */
+.province {
+    float: left;
+    width: 220px;
+    height: 200px;
+}
+
+/* task 7 */
+.province img{
+    float: left;
+    margin: 5px;
+    width: 100px;
+}
+
+/* task 8 */
+ul {
+    list-style-type: none;  /* Remove bullets */
+    padding: 0;             /* Remove padding */
+    margin: 0;              /* Remove margins */
+}
+
+.main {
+    text-shadow: -1px -1px #a48b8b;
+}
+
+h1 {
+    text-shadow: -1px -1px #b8b8b8;
+}
+
+.province {
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    border: 4px solid red;
+}
+
+.province#AB {
+    border: 4px solid darkblue;
+}
+
+.province#BC {
+    border: 4px solid green;
+}
+
+.province#NL {
+    border: 4px solid black;
+}
+
+.province#NS {
+    border: 4px solid darkblue;
+}
+    
+.province#NT {
+    border: 4px solid green;
+}
+
+.province#NU {
+    border: 4px solid black;
+}
+
+.province#PE {
+    border: 4px solid red;
+}
+
+.province#QC {
+    border: 4px solid darkblue;
+}
+
+.province#SK {
+    border: 4px solid green;
+}
+
+.province#YT {
+    border: 4px solid black;
+}
